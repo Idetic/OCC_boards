@@ -18,6 +18,7 @@ The input of the circuit is a voltage level (output of microcontroller for examp
 ## Components
 
 1. OPAMP: The $-V_{supply}$ needs to be 0V.
+2. Microcontroller: We recommend using the STM32L43KC, which features a DAC output that can be easily controlled via the Arduino IDE.
 
 ## Formulas
 
@@ -48,8 +49,3 @@ $$
 ### Why Do We Need a Voltage Divider?
 
 It is important to note that depending on $V_{cc}$, it may not be possible to drive the LED at $I_{\text{LED max}}$ due to the voltage drop across $R_{\text{sense}}$ being too high (as indicated by the first equation). Therefore, the voltage divider ($R_{1}$ and $R_{2}$) can help us control the voltage drop across $R_{\text{sense}}$.
-
-### Microcontroller
-
-We recommend using the STM32L43KC, which features a DAC output that can be easily controlled via the Arduino IDE.
-
