@@ -15,6 +15,10 @@ The input of the circuit is a voltage level (output of microcontroller for examp
 
 ![3d View](https://github.com/Idetic/OCC_boards/blob/main/Constant_Current_PCB/img/View_1.png?raw=true)
 
+## Components
+
+1. OPAMP: The $-V_{supply}$ needs to be 0V.
+
 ## Formulas
 
 Assuming $V_{cc}$ is fixed (typically 5V, 9V, or 12V), to drive an LED between 0 [A] and  $I_{\text{LED max}}$ [A], we know (from the datasheet) that we need to apply 0 [V] and $V_{\text{LED max}}$ [V], respectively. From the circuit, we have the following relationship:
