@@ -49,3 +49,7 @@ $$
 ### Why Do We Need a Voltage Divider?
 
 It is important to note that depending on $V_{cc}$, it may not be possible to drive the LED at $I_{\text{LED max}}$ due to the voltage drop across $R_{\text{sense}}$ being too high (as indicated by the first equation). Therefore, the voltage divider ($R_{1}$ and $R_{2}$) can help us control the voltage drop across $R_{\text{sense}}$.
+
+# Author
+
+Jaime Aranda Cubillo - jarandacu@visionarhq.com
