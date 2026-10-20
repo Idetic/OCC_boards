@@ -2002,6 +2002,12 @@
 		(uuid "3d1305a9-d8d7-4719-ab53-9c3a5dec7cdc")
 	)
 	(junction
+		(at 36.05 111.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "84e2865f-ad18-48b1-905f-72ba7bf82898")
+	)
+	(junction
 		(at 53.594 51.562)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2279,6 +2285,16 @@
 	)
 	(wire
 		(pts
+			(xy 37.1 110.5) (xy 37.1 111.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f18fe3d-6ed4-4dad-b70d-f0d5e7c52971")
+	)
+	(wire
+		(pts
 			(xy 96.774 70.612) (xy 100.838 70.612)
 		)
 		(stroke
@@ -2326,6 +2342,26 @@
 			(type default)
 		)
 		(uuid "3b998d74-9632-4bab-9d43-79336199525c")
+	)
+	(wire
+		(pts
+			(xy 36.05 111.5) (xy 29.464 111.506)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ba1b813-13cb-42ad-a454-537d00156f81")
+	)
+	(wire
+		(pts
+			(xy 125.75 59.05) (xy 122.174 60.198)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ea582f3-d27b-49f5-8392-50346056f39b")
 	)
 	(wire
 		(pts
@@ -2659,7 +2695,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.068 111.506) (xy 29.464 111.506)
+			(xy 36.068 111.506) (xy 36.05 111.5)
 		)
 		(stroke
 			(width 0)
@@ -2826,16 +2862,6 @@
 			(type default)
 		)
 		(uuid "954f6d21-9b2e-4aa8-a72a-969586e7cf44")
-	)
-	(wire
-		(pts
-			(xy 126.746 60.198) (xy 122.174 60.198)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "95ac773d-d5ef-4dfa-a7e3-8284ca0dffc5")
 	)
 	(wire
 		(pts
@@ -3189,6 +3215,16 @@
 	)
 	(wire
 		(pts
+			(xy 37.1 111.5) (xy 36.05 111.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd36e153-cfe7-4943-ad91-7504a5a60ad5")
+	)
+	(wire
+		(pts
 			(xy 97.79 152.908) (xy 113.03 152.908)
 		)
 		(stroke
@@ -3487,16 +3523,6 @@
 		)
 		(uuid "d82d8cb7-feba-45bb-b9ba-04e2736d7f27")
 	)
-	(label "NRST"
-		(at 126.746 60.198 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d989286d-ff1e-4d25-a85c-fbd8009d966d")
-	)
 	(label "LED-"
 		(at 34.1 81.05 0)
 		(effects
@@ -3577,15 +3603,49 @@
 		)
 		(uuid "fb4d9aec-ce4f-4ec1-8fb0-2f91a2dcb819")
 	)
-	(label "NRST"
-		(at 36.068 111.506 0)
+	(global_label "NRST"
+		(shape input)
+		(at 37.1 110.5 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
-		(uuid "fddc81ab-c41c-44b2-8a98-00848d388617")
+		(uuid "1b165a4f-fa42-47a0-bd1d-66d7807580cc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 44.8628 110.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "NRST"
+		(shape input)
+		(at 125.75 59.05 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6d35d46d-968d-452f-91d4-8a1159bde7f9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 133.5128 59.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
